@@ -1,6 +1,8 @@
 const chalk = require('chalk');
 
-console.log(chalk.red('Hello'));
+
+console.log(chalk.red('It works not'));
+
 
 const myUnusedVariable = 42; // Fehler behoben: Verwende const, da die Variable nie verändert wird.
 
