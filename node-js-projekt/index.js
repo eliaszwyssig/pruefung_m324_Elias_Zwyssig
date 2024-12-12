@@ -2,9 +2,10 @@ const chalk = require('chalk');
 
 console.log(chalk.red('It works'));
 
-let myUnusedVariable = 42; // Verletzung von 'prefer-const' und 'no-unused-vars'
+const myUnusedVariable = 42; // Fehler behoben: Verwende const, da die Variable nie verändert wird.
 
-if (myUnusedVariable == '42') { // Verletzung von 'eqeqeq'
-  console.log('This is not strictly equal!');
+if (myUnusedVariable === 42) { // Fehler behoben: Verwende strikte Gleichheit (===)
+  console.log('This is strictly equal!');
 }
+
 
